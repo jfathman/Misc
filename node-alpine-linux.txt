@@ -7,3 +7,5 @@ $ ./configure --without-snapshot
 $ make
 $ sudo make install
 $ sudo paxctl -cm /usr/local/bin/node
+$ node -e 'console.log(process.version);'
+v5.6.0
