@@ -1,0 +1,9 @@
+How to build Node.js from source on Alpine Linux
+
+$ wget https://nodejs.org/dist/v5.6.0/node-v5.6.0.tar.gz
+$ tar xfz node-v5.6.0.tar.gz
+$ cd node-v5.6.0
+$ ./configure --without-snapshot
+$ make
+$ sudo make install
+$ sudo paxctl -cm /usr/local/bin/node
