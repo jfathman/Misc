@@ -1,0 +1,14 @@
+# Makefile
+
+all: exp.js
+
+exp.js: exp.ts
+    @tslint exp.ts
+    @tsc --noEmitOnError exp.ts
+    @eslint exp.js || rm exp.js
+
+run: exp.js
+    @node exp.js
+
+clean:
+    @rm -f exp.js
