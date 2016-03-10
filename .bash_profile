@@ -7,6 +7,7 @@ export GOPATH=$HOME/work/go
 
 export TZ=US/Central
 
+# $ dircolors -p >.dircolors
 if [ -x /usr/bin/dircolors ]; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
