@@ -10,6 +10,7 @@ set autoindent
 :filetype on
 :autocmd FileType c,cpp,cc,java,sh,python,php set cindent
 :autocmd FileType sh set smartindent
+:autocmd BufNewFile,BufRead *.mjs set syntax=javascript
 set cinoptions=>4
 set visualbell t_vb=
 syntax off
